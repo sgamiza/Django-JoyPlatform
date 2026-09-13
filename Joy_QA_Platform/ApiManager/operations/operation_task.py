@@ -390,7 +390,7 @@ def get_response_result(report_id):
 
 
 def send_warn_mail(task_name, receiver, report_id):
-    tips = task_name + '：监控到接口发生异常！查看报告地址：http://qa.15166.com/api/get_report/?id=' + str(report_id)
+    tips = task_name + '：监控到接口发生异常！查看报告地址：http://127.0.0.1:8000/api/get_report/?id=' + str(report_id)
     try:
         email_title = "Joy_QA_Platform 定时任务监控接口"
         email_body = tips

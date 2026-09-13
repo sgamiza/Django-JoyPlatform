@@ -1,8 +1,8 @@
-# Joy QA Platform / 卓游测试平台
+# Joy QA Platform / 接口测试平台
 
 [English](#english) | [中文](#中文)
 
-Django web platform for HTTP API testing, scheduled execution, Locust load tests, and result reports. The UI title is **卓游测试平台**. Source lives under `Joy_QA_Platform/`.
+Django web platform for HTTP API testing, scheduled execution, Locust load tests, and result reports. The UI title is **接口测试平台**. Source lives under `Joy_QA_Platform/`.
 
 ---
 
@@ -137,7 +137,7 @@ Apache License 2.0. HttpRunner inside `httprunner/` is MIT (debugtalk). Locust/C
 
 浏览器里按 **项目 → 模块 → 用例** 维护 HTTP 接口用例，选运行环境后，用仓库内嵌的 [HttpRunner](https://github.com/HttpRunner/HttpRunner) 1.4.7 执行。Celery 跑即时任务和循环监控；同一套 YAML 也可以交给 Locust 做主从压测。业务数据在 MySQL，缓存走 Redis，`settings.py` 里 Celery 的 broker 是 RabbitMQ（AMQP）。
 
-界面名称是 **卓游测试平台**。这是 Django 2.1 年代的一份可运行快照。启动前先填 `Joy_QA_Platform/configs.py`，不要把真实密码提交进 Git。
+界面名称是 **接口测试平台**。这是 Django 2.1 年代的一份可运行快照。启动前先填 `Joy_QA_Platform/configs.py`，不要把真实密码提交进 Git。
 
 ### 功能
 

@@ -100,13 +100,13 @@ def send_captcha(receiver, send_type):
         # 注册新用户的邮件文案
         if send_type == "register":
             email_title = "Joy_QA_Platform 用户注册验证码"
-            email_body = "欢迎注册卓游测试平台！验证码：{0}".format(code)
+            email_body = "欢迎注册接口测试平台！验证码：{0}".format(code)
             # 使用Django内置函数完成邮件发送。四个参数：主题，邮件内容，从哪里发，接受者list
             send_status = send_mail(email_title, email_body, EMAIL_FROM, [receiver])
         # 忘记密码的邮件文案
         elif send_type == "reset":
             email_title = "Joy_QA_Platform 修改密码验证码"
-            email_body = "修改卓游测试平台账号密码！验证码：{0}".format(code)
+            email_body = "修改接口测试平台账号密码！验证码：{0}".format(code)
             # 使用Django内置函数完成邮件发送。四个参数：主题，邮件内容，从哪里发，接受者list
             send_status = send_mail(email_title, email_body, EMAIL_FROM, [receiver])
     except Exception as e:

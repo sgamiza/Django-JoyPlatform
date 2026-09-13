@@ -189,7 +189,7 @@
 		//	        right: 10,
 		//	        top: 20,
 		//	        bottom: 20,
-		////	        data: ['奥飞SDK','融合SDK'],
+		////	        data: ['SDK A','融合SDK'],
 		////	
 		////	        selected: data.selected
 		//  		},
